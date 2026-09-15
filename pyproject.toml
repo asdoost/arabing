@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arabing"
+version = "0.1.0"
+description = "A drop-in superset of Python's string module for Arabic-script languages (Arabic, Persian, Urdu, Pashto, Kurdish, Sindhi, Uyghur, Kashmiri, Punjabi, and Qur'anic Uthmani script)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Abbas Safardoost", email = "a.safardoust@gmail.com" }
+]
+keywords = ["arabic", "persian", "urdu", "quran", "string", "unicode", "nlp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Linguistic",
+    "Natural Language :: Arabic",
+    "Natural Language :: Persian",
+    "Natural Language :: Urdu",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/asdoost/arabing"
+Repository = "https://github.com/asdoost/arabing"
+Issues = "https://github.com/asdoost/arabing/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
